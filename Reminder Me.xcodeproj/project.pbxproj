@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B184CE642E1FDFD6001D8155 /* ToolTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B184CE632E1FDFD6001D8155 /* ToolTipView.swift */; };
 		B190EA672E1D46D400B2ED4E /* ReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190EA662E1D46D400B2ED4E /* ReminderApp.swift */; };
 		B190EA692E1D46D400B2ED4E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190EA682E1D46D400B2ED4E /* HomeView.swift */; };
 		B190EA6B2E1D46D800B2ED4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B190EA6A2E1D46D800B2ED4E /* Assets.xcassets */; };
@@ -14,13 +15,14 @@
 		B190EA762E1D477900B2ED4E /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190EA752E1D477900B2ED4E /* Thing.swift */; };
 		B190EA782E1D482000B2ED4E /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190EA772E1D482000B2ED4E /* Day.swift */; };
 		B190EA7C2E1D4B9500B2ED4E /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190EA7B2E1D4B9500B2ED4E /* TodayView.swift */; };
-		B190EA802E1D4BC900B2ED4E /* ThingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190EA7F2E1D4BC900B2ED4E /* ThingsView.swift */; };
+		B190EA802E1D4BC900B2ED4E /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190EA7F2E1D4BC900B2ED4E /* TodosView.swift */; };
 		B190EA822E1D4BDC00B2ED4E /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190EA812E1D4BDC00B2ED4E /* RemindersView.swift */; };
 		B190EA842E1D4BE900B2ED4E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190EA832E1D4BE900B2ED4E /* SettingsView.swift */; };
 		B190EA862E1D528700B2ED4E /* AddThingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190EA852E1D528700B2ED4E /* AddThingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B184CE632E1FDFD6001D8155 /* ToolTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolTipView.swift; sourceTree = "<group>"; };
 		B190EA632E1D46D400B2ED4E /* Reminder Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reminder Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B190EA662E1D46D400B2ED4E /* ReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderApp.swift; sourceTree = "<group>"; };
 		B190EA682E1D46D400B2ED4E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -29,7 +31,7 @@
 		B190EA752E1D477900B2ED4E /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
 		B190EA772E1D482000B2ED4E /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		B190EA7B2E1D4B9500B2ED4E /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
-		B190EA7F2E1D4BC900B2ED4E /* ThingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsView.swift; sourceTree = "<group>"; };
+		B190EA7F2E1D4BC900B2ED4E /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
 		B190EA812E1D4BDC00B2ED4E /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
 		B190EA832E1D4BE900B2ED4E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B190EA852E1D528700B2ED4E /* AddThingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThingView.swift; sourceTree = "<group>"; };
@@ -96,10 +98,11 @@
 			children = (
 				B190EA682E1D46D400B2ED4E /* HomeView.swift */,
 				B190EA7B2E1D4B9500B2ED4E /* TodayView.swift */,
-				B190EA7F2E1D4BC900B2ED4E /* ThingsView.swift */,
+				B190EA7F2E1D4BC900B2ED4E /* TodosView.swift */,
 				B190EA812E1D4BDC00B2ED4E /* RemindersView.swift */,
 				B190EA832E1D4BE900B2ED4E /* SettingsView.swift */,
 				B190EA852E1D528700B2ED4E /* AddThingView.swift */,
+				B184CE632E1FDFD6001D8155 /* ToolTipView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,12 +179,13 @@
 			files = (
 				B190EA692E1D46D400B2ED4E /* HomeView.swift in Sources */,
 				B190EA842E1D4BE900B2ED4E /* SettingsView.swift in Sources */,
+				B184CE642E1FDFD6001D8155 /* ToolTipView.swift in Sources */,
 				B190EA822E1D4BDC00B2ED4E /* RemindersView.swift in Sources */,
 				B190EA762E1D477900B2ED4E /* Thing.swift in Sources */,
 				B190EA782E1D482000B2ED4E /* Day.swift in Sources */,
 				B190EA7C2E1D4B9500B2ED4E /* TodayView.swift in Sources */,
 				B190EA672E1D46D400B2ED4E /* ReminderApp.swift in Sources */,
-				B190EA802E1D4BC900B2ED4E /* ThingsView.swift in Sources */,
+				B190EA802E1D4BC900B2ED4E /* TodosView.swift in Sources */,
 				B190EA862E1D528700B2ED4E /* AddThingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

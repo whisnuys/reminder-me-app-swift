@@ -8,32 +8,52 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var selectedTab: Tab = Tab.today
+    
     var body: some View {
         
-        TabView{
-            TodayView()
+        TabView (selection: $selectedTab) {
+            
+            
+            TodayView(selectedTab: $selectedTab)
                 .tabItem {
                     Text("Today")
                     Image(systemName: "calendar")
                 }
-            ThingsView()
+                .tag(Tab.today)
+            
+            TodosView()
                 .tabItem {
-                    Text("Things")
+                    Text("Todos")
                     Image(systemName: "heart")
                 }
+                .tag(Tab.things)
+            
             RemindersView()
                 .tabItem {
                     Text("Reminders")
                     Image(systemName: "bell")
                 }
+                .tag(Tab.reminders)
+            
             SettingsView()
                 .tabItem {
                     Text("Settings")
                     Image(systemName: "gear")
                 }
+                .tag(Tab.settings)
         }
         .padding()
+        .tint(Color.green)
     }
+}
+
+enum Tab: Int {
+    case today = 0
+    case things = 1
+    case reminders = 2
+    case settings = 3
 }
 
 #Preview {

@@ -18,7 +18,7 @@ struct SettingsView: View {
             List {
                 
                 // Rate the app
-                let reviewUrl = URL(string: "")!
+                let reviewUrl = URL(string: "https://apps.apple.com/app/id6670766958?action=write-review")!
                 
                 
                 Link(destination: reviewUrl, label: {
@@ -31,7 +31,7 @@ struct SettingsView: View {
                 })
                 
                 // Recommend the app
-                let shareUrl = URL(string: "")!
+                let shareUrl = URL(string: "https://apps.apple.com/app/id6670766958")!
                 
                 ShareLink(item: shareUrl) {
                     HStack {
@@ -63,7 +63,7 @@ struct SettingsView: View {
                 
                 
                 // Privacy Policy
-                let privacyUrl = URL(string: "")!
+                let privacyUrl = URL(string: "https://codewithchris.com/abd-privacy-policy/")!
                 
                 Link(destination: privacyUrl, label: {
                     
@@ -87,7 +87,7 @@ struct SettingsView: View {
         mailUrlComponents.scheme = "mailto"
         mailUrlComponents.path = "whisnusaputra30@gmail.com"
         mailUrlComponents.queryItems = [
-            URLQueryItem(name: "subject", value: "Feedback for Reminder Me app")
+            URLQueryItem(name: "subject", value: "Feedback for Reminder app")
         ]
         
         return mailUrlComponents.url

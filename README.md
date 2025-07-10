@@ -45,7 +45,7 @@ To run this project on your local machine:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/whisnuys/reminder-me-app-swift.git](https://github.com/whisnuys/reminder-me-app-swift.git)
+    git clone https://github.com/whisnuys/reminder-me-app-swift.git
     ```
 
 2.  **Open the project in Xcode:**

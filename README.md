@@ -2,7 +2,6 @@
 
 ![Swift Version](https://img.shields.io/badge/Swift-5.9-orange.svg)
 ![iOS](https://img.shields.io/badge/iOS-17.0%2B-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 A simple  Reminder & To-Do List application built entirely with modern Apple technologies
 
@@ -56,7 +55,3 @@ To run this project on your local machine:
 
 3.  **Run the app:**
     Select your target device (or a simulator) and press `Cmd+R` to build and run the application. The app will ask for permission to send notifications—make sure to accept to test the reminder functionality!
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
